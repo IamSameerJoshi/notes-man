@@ -1,56 +1,61 @@
-# Welcome to your Expo app 👋
+# Notes Man 📝
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Notes Man** is a privacy-first, high-fidelity note-taking application designed for total data sovereignty. It ensures that personal thoughts, passwords, and sensitive information **remain exclusively on your device**, shielded from cloud-based surveillance and third-party access.
 
-## Get started
+---
 
-1. Install dependencies
+## 🛡️ Privacy First Architecture
 
-   ```bash
-   npm install
-   ```
+- **100% Offline**: The application operates without external servers. All data is stored in the device's secure internal storage.
+- **No Cloud Synchronization**: Your data is never transmitted over the internet. There is zero tracking, syncing, or data collection.
+- **Data Ownership**: You maintain complete control over your database. A built-in Export feature allows for manual backups to your preferred secure location.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🌟 Key Features
 
-In the output, you'll find options to open the app in a
+### 🔐 Dual-Layer Security
+Manage information across two distinct security environments:
+- **Regular Mode**: For quick, non-sensitive notes and task management.
+- **Vault Mode**: A hardened environment protected by **AES-256 encryption**. Data is encrypted locally and remains inaccessible without the user-defined password.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 📌 Pinned Notes
+Maintain focus by anchoring essential information. Notes in either section can be pinned to remain at the top of the list for immediate access.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🗑️ Gesture-Based Deletion
+Utilizes a custom gesture-interceptor system for efficient data management. Notes can be deleted by dragging them into a dedicated secure deletion zone.
 
-## Get a fresh project
+### 📥 Local Data Management
+Provides a robust **Export & Share** utility. Users can export their entire encrypted database as a JSON file for manual archiving and backup.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🛠️ Technical Specifications
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Framework**: [Expo](https://expo.dev/) (SDK 55)
+- **Encryption**: AES-256 (via `crypto-js`) with secure cryptographic primitives.
+- **Persistence**: File-based local JSON storage using `expo-file-system/legacy`.
+- **Interface**: High-performance UI utilizing custom React Native animations and Ionicons.
 
-### Other setup steps
+---
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## 🔐 Security Protocols
+**Notes Man** employs professional-grade encryption standards:
+1. **Zero-Knowledge**: Your password is the sole decryption key and is never stored on the device.
+2. **Data Persistence**: If the vault password is lost, the encrypted data cannot be recovered. 
+3. **Vault Reset**: A secure reset function is available to clear the database and start fresh, ensuring no unauthorized access is possible.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🚀 Installation & Usage
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Install dependencies: `npm install`
+2. Run on Android: `npm run android`
+3. Run on iOS: `npm run ios`
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 📄 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details. You are free to fork, modify, and use this project in your own applications.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Designed for absolute privacy. Your data. Your device. Your control.

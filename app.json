@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "NoteTakerApp",
-    "slug": "NoteTakerApp",
+    "name": "Notes Man",
+    "slug": "notes-man",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "notetakerapp",
+    "scheme": "notesman",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"

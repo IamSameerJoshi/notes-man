@@ -16,7 +16,7 @@ export default function Header({ onExport }) {
     <View style={styles.container}>
       <View>
         <Text style={styles.dateText}>{today}</Text>
-        <Text style={styles.title}>My Notes</Text>
+        <Text style={styles.title}>Notes Man</Text>
       </View>
       <View style={styles.rightSection}>
         <TouchableOpacity 

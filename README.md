@@ -2,6 +2,8 @@
 
 **Notes Man** is a privacy-first, high-fidelity note-taking application designed for total data sovereignty. It ensures that personal thoughts, passwords, and sensitive information **remain exclusively on your device**, shielded from cloud-based surveillance and third-party access.
 
+This project is maintained under **PrivyLab**, an open-source, privacy-first organization focused on building user-respecting applications.
+
 ---
 
 ## 🛡️ Privacy First Architecture

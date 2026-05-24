@@ -41,3 +41,10 @@ app-example
 # generated native folders
 /ios
 /android
+
+
+# User-specific IDE settin
+.claude
+.vscode
+.antigravity
+.agent
